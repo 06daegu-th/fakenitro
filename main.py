@@ -8,7 +8,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print("{client.name}")
+    print("로그인을 시작합니다. {client.user}")
     await client.change_presence(status=discord.Status.dnd) #다른용무중(겉멋....)
 
 
